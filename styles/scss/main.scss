@@ -82,3 +82,19 @@ ul {
     }
   }
 }
+
+
+/* Sections */
+
+section {
+  position: relative;
+  height: 100vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-transform: uppercase;
+}
+
+.section-about {
+  background-image: url('../../img/about.jpg');
+}
