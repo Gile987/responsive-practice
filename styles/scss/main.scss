@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Roboto+Condensed:wght@300;700&display=swap');
 /* Reset (adding before and after pseudo elements, because the asterisk doesn't cover them) */
 
 *,
@@ -106,6 +105,7 @@ section {
   max-width: 35rem;
 
   h4 {
+    font-family: 'Roboto', sans-serif;
     font-size: 1.375rem;
     margin-bottom: 0.313rem;
     font-weight: 300;
@@ -113,6 +113,7 @@ section {
   }
 
   h2 {
+    font-family: 'Roboto', sans-serif;
     font-size: 3.125rem;
     font-weight: 700;
     margin-bottom: 1.25rem;
@@ -167,8 +168,17 @@ section {
     transform: translateY(100%);
   }
 
+  span {
+    font-family: 'Roboto', sans-serif;
+  }
+
 }
 
+.scroll-icon {
+  position: absolute;
+  bottom: 3.125rem;
+  left: 50%;
+}
 
 /* Animations */
 
