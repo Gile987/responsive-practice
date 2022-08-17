@@ -117,8 +117,29 @@ section {
           animation-fill-mode: both;
 }
 
-.section-about {
+/* Sections - Backgrounds */
+#section-about {
   background-image: url("../../img/about.jpg");
+}
+
+#section-discord {
+  background-image: url("../../img/discord.png");
+}
+
+#section-discord {
+  background-image: url("../../img/discord.png");
+}
+
+#section-reviews {
+  background-image: url("../../img/reviews.png");
+}
+
+#section-news {
+  background-image: url("../../img/news.jpg");
+}
+
+#section-tjpw {
+  background-image: url("../../img/tjpw.jpg");
 }
 
 /* Buttons */
