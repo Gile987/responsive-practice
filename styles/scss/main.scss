@@ -131,6 +131,7 @@ section {
   background-image: url('../../img/about.jpg');
 }
 
+
 /* Buttons */
 
 .btn {
@@ -178,7 +179,10 @@ section {
   position: absolute;
   bottom: 3.125rem;
   left: 50%;
+  transform: translateX(-50%);
+  animation: bouncyArrow 0.5s ease-in-out infinite;
 }
+
 
 /* Animations */
 
@@ -190,6 +194,18 @@ section {
 
   100% {
     opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bouncyArrow {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-0.25rem);
+  }
+  100% {
     transform: translateY(0);
   }
 }
