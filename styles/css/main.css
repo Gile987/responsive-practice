@@ -163,8 +163,8 @@ section {
   bottom: 3.125rem;
   left: 50%;
   transform: translateX(-50%);
-  -webkit-animation: bouncyArrow 0.5s ease-in-out infinite;
-          animation: bouncyArrow 0.5s ease-in-out infinite;
+  -webkit-animation: bouncyArrow 3.5s infinite;
+          animation: bouncyArrow 3.5s infinite;
 }
 
 /* Animations */
@@ -189,24 +189,22 @@ section {
   }
 }
 @-webkit-keyframes bouncyArrow {
-  0% {
-    transform: translateY(0);
+  0%, 20%, 50%, 80%, 100% {
+    opacity: 0;
+    transform: translateY(-1.25rem);
   }
-  50% {
-    transform: translateY(-0.25rem);
-  }
-  100% {
+  40% {
+    opacity: 1;
     transform: translateY(0);
   }
 }
 @keyframes bouncyArrow {
-  0% {
-    transform: translateY(0);
+  0%, 20%, 50%, 80%, 100% {
+    opacity: 0;
+    transform: translateY(-1.25rem);
   }
-  50% {
-    transform: translateY(-0.25rem);
-  }
-  100% {
+  40% {
+    opacity: 1;
     transform: translateY(0);
   }
 }/*# sourceMappingURL=main.css.map */
