@@ -226,6 +226,7 @@ footer ul li a:hover {
   height: 1.25rem;
   background: none;
   border: none;
+  display: none;
 }
 .hamburger .hamburger-top,
 .hamburger .hamburger-middle,
@@ -236,6 +237,7 @@ footer ul li a:hover {
   width: 1.25rem;
   height: 0.125rem;
   background: #ffb327;
+  transition: all 0.5s;
 }
 .hamburger .hamburger-middle {
   transform: translateY(0.313rem);
@@ -249,13 +251,13 @@ footer ul li a:hover {
   transform: rotate(90deg);
 }
 .open .hamburger-top {
-  transform: rotate(45deg) translateY(0.375rem) translateX(0.375rem);
+  transform: rotate(45deg) translateY(0.313rem) translateX(0.313rem);
 }
 .open .hamburger-middle {
   display: none;
 }
 .open .hamburger-bottom {
-  transform: rotate(-45deg) translateY(0.375rem) translateX(-0.375rem);
+  transform: rotate(-45deg) translateY(0.313rem) translateX(-0.313rem);
 }
 
 /* Animations */
@@ -325,6 +327,9 @@ footer ul li a:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     margin: 0.75rem 0 0 0;
+  }
+  .hamburger {
+    display: block;
   }
   .logo {
     width: 9.375rem;
