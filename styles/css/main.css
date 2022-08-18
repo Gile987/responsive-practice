@@ -29,6 +29,7 @@ ul {
   position: fixed;
   top: 0;
   left: 0;
+  max-width: 100%;
   width: 100%;
   height: 6.25rem;
   padding: 0 1.875rem;
@@ -253,5 +254,33 @@ footer ul li a:hover {
   40% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+/* Media Queries */
+@media (max-width: 960px) {
+  .desktop-main-menu {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .section-inner {
+    bottom: 4.688rem;
+    left: 1.25rem;
+  }
+  .section-inner h2 {
+    font-size: 2.5rem;
+  }
+  footer ul li {
+    margin-right: 0.938rem;
+  }
+  footer ul li:first-child {
+    position: absolute;
+    top: 1.875rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .logo {
+    width: 9.375rem;
+    margin: auto;
   }
 }/*# sourceMappingURL=main.css.map */
