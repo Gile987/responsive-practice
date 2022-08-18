@@ -7,7 +7,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  //outline: solid 1px red;
+  //outline: red 2px solid;
 }
 
 body {
@@ -48,7 +48,7 @@ ul {
     height: auto;
 
     img {
-      display: block;
+      display: flex;
       width: 100%;
       height: auto;
     }
@@ -242,6 +242,59 @@ footer {
 }
 
 
+/* Hamburger */
+
+.hamburger {
+  position: fixed;
+  top: 2.5rem;
+  right: 1.25rem;
+  z-index: 10;
+  cursor: pointer;
+  width: 1.25rem;
+  height: 1.25rem;
+  background: none;
+  border: none;
+
+  .hamburger-top,
+  .hamburger-middle,
+  .hamburger-bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1.25rem;
+    height: 0.125rem;
+    background: #ffb327;
+  }
+
+  .hamburger-middle {
+    transform: translateY(0.313rem);
+  }
+
+  .hamburger-bottom {
+    transform: translateY(0.625rem);
+  }
+}
+
+
+/* Hamburger to X */
+
+.open {
+  transform: rotate(90deg);
+
+  .hamburger-top {
+    transform:  rotate(45deg) translateY(0.375rem) translateX(0.375rem);
+  }
+
+  .hamburger-middle {
+    display: none;
+  }
+
+  .hamburger-bottom {
+    transform:  rotate(-45deg) translateY(0.375rem) translateX(-0.375rem);
+  }
+}
+
+
 /* Animations */
 
 @keyframes moveUp {
@@ -289,7 +342,11 @@ footer {
     left: 1.25rem;
 
     h2 {
-      font-size: 2.5rem;
+      font-size: 2.25rem;
+    }
+
+    h4 {
+      font-size: 1.1rem;
     }
   }
 
@@ -303,6 +360,7 @@ footer {
           top: 1.875rem;
           left: 50%;
           transform: translate(-50%, -50%);
+          margin: 0.75rem 0 0 0;
         }
       }
     }
