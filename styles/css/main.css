@@ -250,6 +250,40 @@ footer ul li a:hover {
   transform: translateY(0.625rem);
 }
 
+/* Inner Pages */
+.bg-about {
+  background-image: url("../../img/about.jpg");
+}
+
+.about-animate {
+  -webkit-animation: fadeIn 2s ease-in-out;
+          animation: fadeIn 2s ease-in-out;
+}
+
+.about-inner-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  text-align: center;
+}
+.about-inner-center h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 6.25rem;
+  margin-bottom: 0.9rem;
+  -webkit-animation: moveUp 0.5s ease-in-out;
+          animation: moveUp 0.5s ease-in-out;
+}
+.about-inner-center p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  -webkit-animation: moveUp 0.5s ease-in-out 0.2s;
+          animation: moveUp 0.5s ease-in-out 0.2s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
 /* Hamburger to X */
 .open {
   transform: rotate(90deg);
@@ -283,6 +317,22 @@ footer ul li a:hover {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 @-webkit-keyframes bouncyArrow {

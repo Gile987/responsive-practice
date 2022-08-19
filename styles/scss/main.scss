@@ -281,6 +281,40 @@ footer {
 }
 
 
+/* Inner Pages */
+
+.bg-about {
+  background-image: url('../../img/about.jpg');
+}
+
+.about-animate {
+  animation: fadeIn 2s ease-in-out;
+}
+
+.about-inner-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  text-align: center;
+
+  h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 6.25rem;
+    margin-bottom: 0.9rem;
+    animation: moveUp 0.5s ease-in-out;
+  }
+
+  p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    animation: moveUp 0.5s ease-in-out 0.2s;
+    animation-fill-mode: both;
+  }
+}
+
+
 /* Hamburger to X */
 
 .open {
@@ -311,6 +345,16 @@ footer {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
 
