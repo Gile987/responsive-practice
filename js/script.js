@@ -2,6 +2,7 @@ const button = document.getElementById('menu-btn');
 const overlay = document.getElementById('overlay');
 const menu = document.getElementById('mobile-menu');
 const counters = document.querySelectorAll('.counter');
+let scrollStart = false;
 
 button.addEventListener('click', () => {
   button.classList.toggle('open');
@@ -9,6 +10,18 @@ button.addEventListener('click', () => {
   document.body.classList.toggle('stop-scrolling');
   menu.classList.toggle('show-menu');
 });
+
+const scrollPage = () => {
+  const scrollPosition = window.scrollY;
+
+  if (scrollPosition > 100 && !scrollStart) {
+    countUp();
+    scrollStart = true;
+  } else if (scrollPosition < 100 && scrollStart) {
+    reset();
+    scrollStart = false;
+  };
+};
 
 const countUp = () => {
   counters.forEach(counter => {
@@ -30,6 +43,12 @@ const countUp = () => {
 
     updateCount();
   });
-}
+};
 
-countUp();
+const reset = () => {
+  counters.forEach(counter => {
+    counter.innerHTML = '0';
+  });
+};
+
+document.addEventListener('scroll', scrollPage);
