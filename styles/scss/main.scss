@@ -314,6 +314,29 @@ footer {
   }
 }
 
+.stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  text-transform: uppercase;
+  max-width: 80%;
+  margin: 0 auto;
+
+  div {
+    font-family: 'Roboto', sans-serif;
+
+    span {
+      font-size: 10rem;
+    }
+
+    h4 {
+      font-size: 1.8rem;
+      font-weight: 300;
+    }
+  }
+}
+
 
 /* Hamburger to X */
 
