@@ -139,7 +139,7 @@ section {
 }
 
 #section-reviews {
-  background-image: url("../../img/reviews.png");
+  background-image: url("../../img/reviews.jpg");
 }
 
 #section-news {
@@ -310,6 +310,58 @@ footer ul li a:hover {
   .desktop-main-menu {
     display: none;
   }
+  .stop-scrolling {
+    overflow: hidden;
+  }
+  .mobile-main-menu {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    width: 15rem;
+    height: 100%;
+    z-index: 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(100%);
+    transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  .mobile-main-menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    padding: 0.6rem 0.6rem 30rem 0.6rem;
+    width: 100%;
+  }
+  .mobile-main-menu ul li {
+    margin-bottom: 1.25rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    border-bottom: 1px dotted #ffb327;
+    width: 100%;
+    text-align: right;
+    padding-bottom: 0.4rem;
+  }
+  .show-menu {
+    transform: translateX(0);
+  }
+  .hamburger {
+    display: block;
+  }
+  .overlay-visible {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 3;
+  }
 }
 @media (max-width: 600px) {
   .section-inner {
@@ -332,59 +384,16 @@ footer ul li a:hover {
     transform: translate(-50%, -50%);
     margin: 0.75rem 0 0 0;
   }
-  .hamburger {
-    display: block;
-  }
   .logo {
     width: 9.375rem;
   }
-  .overlay-visible {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 3;
-  }
-  .stop-scrolling {
-    overflow: hidden;
-  }
   .mobile-main-menu {
-    position: fixed;
-    background-color: rgba(0, 0, 0, 0.8);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: 0;
-    right: 0;
     width: 9rem;
-    height: 100%;
-    z-index: 4;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: translateX(100%);
-    transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
   }
   .mobile-main-menu ul {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    justify-content: center;
-    padding: 0.6rem;
-    width: 100%;
+    padding-bottom: 24rem;
   }
   .mobile-main-menu ul li {
-    margin-bottom: 1.25rem;
-    text-transform: uppercase;
-    font-size: 0.813rem;
-    border-bottom: 1px dotted #ffb327;
-    width: 100%;
-    text-align: right;
-    padding-bottom: 0.4rem;
-  }
-  .show-menu {
-    transform: translateX(0);
+    font-size: 0.85rem;
   }
 }/*# sourceMappingURL=main.css.map */
