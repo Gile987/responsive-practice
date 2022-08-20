@@ -464,6 +464,21 @@ footer {
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 3;
   }
+
+  .about-inner-center {
+    h3 {
+      font-size: 4.8rem;
+    }
+  }
+  .stats {
+    div {
+      margin: 0.5rem 0 1rem 0;
+
+      span {
+        font-size: 4rem;
+      }
+    }
+  }
 }
 
 @media (max-width: 600px) {
@@ -506,8 +521,27 @@ footer {
 
     ul {
       padding-bottom: 24rem;
+
       li {
         font-size: 0.85rem;
+      }
+    }
+  }
+
+  .about-inner-center {
+    h3 {
+      font-size: 3rem;
+    }
+  }
+
+  .stats {
+    flex-direction: column;
+
+    div {
+      margin: 0.5rem 0 1rem 0;
+
+      span {
+        font-size: 3.6rem;
       }
     }
   }
