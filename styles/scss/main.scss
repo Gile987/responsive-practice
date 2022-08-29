@@ -42,6 +42,7 @@ ul {
   justify-content: space-between;
   align-items: center;
   text-transform: uppercase;
+  background-color: #251936;
 
   .logo {
     width: 13rem;
@@ -219,7 +220,8 @@ section {
 
 footer {
   position: relative;
-  padding: 3.438 0;
+  padding: 1rem 0;
+  background-color: #251936;
 
   ul {
     display: flex;
@@ -503,10 +505,10 @@ footer {
 
         &:first-child {
           position: absolute;
-          top: 1.875rem;
+          top: 2.6rem;
           left: 50%;
           transform: translate(-50%, -50%);
-          margin: 0.75rem 0 0 0;
+          margin: 0.45rem 0 0 0;
         }
       }
     }
