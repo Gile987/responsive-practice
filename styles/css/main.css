@@ -100,6 +100,8 @@ section {
   bottom: 12.5rem;
   left: 9.375rem;
   max-width: 35rem;
+  border: 2px solid #ffb327;
+  padding: 1rem;
 }
 .section-inner h4 {
   font-family: "Roboto", sans-serif;
