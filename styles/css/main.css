@@ -319,9 +319,12 @@ footer ul li a:hover {
   margin: 0 auto;
   background-color: #251936;
   padding: 0 2rem;
+  border-top: #ffb327 0.125rem solid;
+  border-bottom: #ffb327 0.125rem solid;
 }
 .stats div {
   font-family: "Roboto", sans-serif;
+  padding-bottom: 1rem;
 }
 .stats div span {
   font-size: 8rem;
