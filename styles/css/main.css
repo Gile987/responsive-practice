@@ -44,6 +44,10 @@ ul {
   width: 13rem;
   height: auto;
 }
+.main-header .logo:hover {
+  -webkit-animation: zoom-in-zoom-out 1s ease;
+          animation: zoom-in-zoom-out 1s ease;
+}
 .main-header .logo img {
   display: flex;
   width: 100%;
@@ -403,6 +407,28 @@ footer ul li a:hover {
   40% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+@-webkit-keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.5, 1.5);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.5, 1.5);
+  }
+  100% {
+    transform: scale(1, 1);
   }
 }
 /* Media Queries */
