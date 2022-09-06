@@ -259,9 +259,9 @@ footer {
     flex-wrap: wrap;
 
     .copy {
-      // add animation that flashes border
-      animation: flash-border 1s infinite;
-      border:#ac9bbf 1px solid;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     li {
@@ -447,18 +447,6 @@ footer {
   }
   100% {
     transform: scale(1, 1);
-  }
-}
-
-@keyframes flash-border {
-  0% {
-    border-color: #ffb327;
-  }
-  50% {
-    border-color: #251936;
-  }
-  100% {
-    border-color: #ffb327;
   }
 }
 

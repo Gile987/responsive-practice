@@ -236,9 +236,9 @@ footer ul {
   flex-wrap: wrap;
 }
 footer ul .copy {
-  -webkit-animation: flash-border 1s infinite;
-          animation: flash-border 1s infinite;
-  border: #ac9bbf 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 footer ul li {
   margin-right: 1.875rem;
@@ -434,28 +434,6 @@ footer ul li a:hover {
   }
   100% {
     transform: scale(1, 1);
-  }
-}
-@-webkit-keyframes flash-border {
-  0% {
-    border-color: #ffb327;
-  }
-  50% {
-    border-color: #251936;
-  }
-  100% {
-    border-color: #ffb327;
-  }
-}
-@keyframes flash-border {
-  0% {
-    border-color: #ffb327;
-  }
-  50% {
-    border-color: #251936;
-  }
-  100% {
-    border-color: #ffb327;
   }
 }
 /* Media Queries */
