@@ -478,6 +478,9 @@ footer ul li a:hover {
     text-align: right;
     padding-bottom: 0.4rem;
   }
+  .mobile-main-menu ul li a:hover {
+    color: #ac9bbf;
+  }
   .show-menu {
     transform: translateX(0);
   }
